@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Registration</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Registre to our site to know everything about our mobiles application." />
+  <!-- site icon -->
+  <link rel="icon" type="image/x-icon" href="Media/Icon/mobile-icon.ico" />
+  <!-- icons used in the project -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- 1st font  |  font-family: 'Corinthia', cursive; -->
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap" rel="stylesheet" />
+  <!-- 2nd font  |  font-family: 'Prompt', sans-serif;  |  for ==> Zeyad Hamed -->
+  <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Prompt:wght@200&display=swap"
+    rel="stylesheet" />
+  <!-- style files -->
+  <link rel="stylesheet" href="CSS/fromNet-registration.css" />
+  <!-- script files -->
+  <script src="JavaScript/fromNet-registration.js"></script>
+</head>
+
+<body>
+  <div class="register-form-outerborder">
+    <div class="register-form-innerborder">
+      <h1>registration form</h1>
+      <form onsubmit="return CheckForm();">
+        <div class="inputs">
+          <div class="user-name user-data">
+            <label for="userName"><i class="fa-solid fa-user"></i></label>
+            <input type="text" id="userName" placeholder="Your Name" maxlength="29" autofocus required
+              onkeyup="checkUsername(this)" />
+            <div class="userNameText">No spaces</div>
+          </div>
+
+          <div class="user-mail user-data">
+            <label for="mail"><i class="fa-solid fa-envelope"></i></label>
+            <input type="email" id="mail" placeholder="e-mail" required onkeyup="checkMail(this)" />
+          </div>
+
+          <div class="user-password user-data">
+            <label for="pass"><i class="fa-solid fa-lock"></i></label>
+            <input type="password" id="pass" placeholder="Password" required autocomplete="off"
+              onkeyup="checkPassword(this)" />
+            <div class="eyeIcon" onclick="showPasswor(this)">
+              <i class="fa-sharp fa-solid fa-eye"></i>
+            </div>
+          </div>
+
+          <div class="user-password-confirm user-data">
+            <label for="passConfirm"><i class="fa-solid fa-lock"></i></label>
+            <input type="password" id="passConfirm" placeholder="Confirm your password" required autocomplete="off"
+              onkeyup="checkPasswordConfirm(this)" />
+          </div>
+        </div>
+
+        <div class="checkbox-terms-of-service">
+          <input type="checkbox" id="checkboxTerms" required onclick="checkBoxValidate()" />
+          <label for="checkboxTerms">I agree all statements in <a href="#">Terms of service</a></label>
+        </div>
+
+        <div class="button-register">
+          <button type="submit">Register</button>
+        </div>
+      </form>
+      <div class="Already-have-an-account">
+        Already have an account? <a href="index.html">Log in</a>
+      </div>
+    </div>
+    <footer>
+      &#169; Copyright 2022 by <span>Zeyad Hamed</span> . All Rights Reserved.
+    </footer>
+  </div>
+</body>
+
+</html>

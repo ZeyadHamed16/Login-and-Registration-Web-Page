@@ -1,0 +1,233 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Prompt', sans-serif;
+	cursor: context-menu;
+}
+
+/* ------------------------------------------------------------  */
+/* backgroun */
+/* ------------------------------------------------------------  */
+
+/* container of background */
+.login-form-outerborder {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-image: url(../Media/Photo/login2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right center;
+}
+
+/* ------------------------------------------------------------  */
+/* white registration */
+/* ------------------------------------------------------------  */
+
+/* registration container */
+.login-form-innerborder {
+	display: flex;
+	flex-direction: column;
+	background-color: #f2f3f7;
+	width: 40%;
+	margin: auto;
+	padding: 40px;
+	border-radius: 30px;
+	overflow: hidden;
+}
+
+/* ------------------------------------------------------------ */
+/* Dont have account yet */
+/* ------------------------------------------------------------ */
+
+.login-form-innerborder .Dont-have-account-yet {
+	text-align: center;
+}
+
+.login-form-innerborder .Dont-have-account-yet a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.login-form-innerborder .Dont-have-account-yet a:hover {
+	text-decoration: underline;
+}
+
+/* ------------------------------------------------------------ */
+
+/* the text in the log in */
+.login-form-innerborder h1 {
+	/* background-color: deeppink; */
+	margin: 0;
+	font-size: 45px;
+	text-transform: uppercase;
+	text-align: center;
+	overflow: hidden;
+}
+
+/* ------------------------------------------------------------  */
+/* data & checkBox & button */
+/* ------------------------------------------------------------  */
+
+/* container */
+form {
+	margin-top: 20px;
+	padding: 10px;
+}
+
+/* ------------------------------------------------------------ */
+
+/* container of user data */
+.inputs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* ------------------------------------------ */
+/* data */
+/* ------------------------------------------ */
+
+/* user data (labels and inputs)*/
+.user-data {
+	display: flex;
+	width: 70%;
+	font-size: 25px;
+}
+
+/* user data labels */
+.user-data label {
+	display: inherit;
+	align-items: center;
+	margin-right: 15px;
+	transition: 1s ease;
+}
+
+.user-data:hover label {
+	color: red;
+	transform: rotateY(180deg);
+}
+
+/* user data inputs */
+.user-data input {
+	display: inherit;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #f2f3f7;
+	font-size: 20px;
+	outline: none;
+	border: none;
+	border-bottom: 3px solid;
+}
+
+/* ------------------------*/
+/* username container */
+.user-password {
+	position: relative;
+}
+
+/* password icon*/
+.user-password>div {
+	position: absolute;
+	right: 0px;
+	top: 12px;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+/* ------------------------------------------ */
+/* button */
+/* ------------------------------------------ */
+
+/* container of button */
+.button-login {
+	/* background-color: chocolate; */
+	text-align: center;
+	padding-top: 30px;
+}
+
+/* button */
+.button-login input {
+	/* cursor: pointer; */
+	font-size: 35px;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+	border: 2px solid black;
+	border-radius: 15px;
+	opacity: 0.7;
+	transition: 1s ease;
+}
+
+.button-login input:hover {
+	transform: scale(1.1);
+	opacity: 1;
+}
+
+.button-login input:active {
+	background-color: red;
+}
+
+/* ------------------------------------------------------------ */
+/* social icons */
+/* ------------------------------------------------------------ */
+
+/* container of social icons and the text (outer) */
+.social-icons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* text */
+.social-icons p {
+	margin: 10px 0 0 0;
+}
+
+/* container of icons (inner) */
+.social-icons .icons {
+	display: flex;
+	width: 30%;
+}
+
+/* icons */
+.social-icons .icons a {
+	font-size: 40px;
+	margin: auto;
+	transition: 0.5s ease;
+}
+
+.social-icons .icons a:hover {
+	transform: scale(1.4);
+}
+
+.facebook {
+	color: #3b5998;
+}
+
+.twitter {
+	color: #1da0f2;
+}
+
+.google {
+	color: #e72734;
+}
+
+/* ------------------------------------------------------------ */
+/* copyright */
+/* ------------------------------------------------------------ */
+
+footer {
+	background-color: #4c3d3d;
+	color: white;
+	margin-top: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+footer span {
+	font-family: 'Corinthia', cursive;
+	font-size: 30px;
+}

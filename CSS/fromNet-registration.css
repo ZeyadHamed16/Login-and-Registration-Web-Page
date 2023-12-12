@@ -1,0 +1,228 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Prompt', sans-serif;
+	cursor: context-menu;
+}
+
+/* ------------------------------------------------------------  */
+/* backgroun */
+/* ------------------------------------------------------------  */
+
+/* container of background */
+.register-form-outerborder {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-image: url(../Media/Photo/login2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right center;
+}
+
+/* ------------------------------------------------------------  */
+/* white registration form */
+/* ------------------------------------------------------------  */
+
+/* registration container */
+.register-form-innerborder {
+	display: flex;
+	flex-direction: column;
+	background-color: #f2f3f7;
+	width: 40%;
+	margin: auto;
+	padding: 40px 40px 10px;
+	border-radius: 30px;
+	overflow: hidden;
+}
+
+/* ------------------------------------------ */
+
+/* the text in the registration */
+.register-form-innerborder h1 {
+	/* background-color: deeppink; */
+	margin: 0;
+	font-size: 45px;
+	text-transform: uppercase;
+	text-align: center;
+	overflow: hidden;
+}
+
+/* ------------------------------------------------------------  */
+/* data & checkBox & button */
+/* ------------------------------------------------------------  */
+
+/* container */
+form {
+	margin-top: 20px;
+	padding: 10px;
+}
+
+/* ------------------------------------------ */
+
+/* container of user data */
+.inputs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* ------------------------------------------ */
+/* data */
+/* ------------------------------------------ */
+
+/* user data (labels and inputs)*/
+.user-data {
+	display: flex;
+	width: 70%;
+	font-size: 25px;
+}
+
+/* user data labels */
+.user-data label {
+	display: inherit;
+	align-items: center;
+	margin-right: 15px;
+	transition: 1s ease;
+}
+
+.user-data:hover label {
+	color: red;
+	transform: rotateY(180deg);
+}
+
+/* user data inputs */
+.user-data input {
+	display: inherit;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #f2f3f7;
+	font-size: 20px;
+	outline: none;
+	border: none;
+	border-bottom: 3px solid;
+}
+
+/* ------------------------------*/
+/* username and password container*/
+.user-name,
+.user-password {
+	position: relative;
+}
+
+/* ------------------------*/
+/* username condition */
+
+.user-name>div {
+	position: absolute;
+	left: 40px;
+	bottom: 0px;
+	font-size: 11px;
+	font-weight: bold;
+	color: red;
+}
+
+/* ------------------------*/
+/* password icon*/
+
+.user-password>div {
+	position: absolute;
+	right: 0px;
+	top: 12px;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+/* ------------------------------------------ */
+/* checkBox */
+/* ------------------------------------------ */
+
+/* container of checkBox */
+.checkbox-terms-of-service {
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+.checkbox-terms-of-service label,
+.checkbox-terms-of-service input {
+	cursor: pointer;
+}
+
+/* the link on the checkBox */
+.checkbox-terms-of-service a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.checkbox-terms-of-service a:hover {
+	text-decoration: underline;
+}
+
+/* ------------------------------------------ */
+/* button */
+/* ------------------------------------------ */
+
+/* container of button */
+.button-register {
+	text-align: center;
+	padding-top: 30px;
+}
+
+/* button */
+.button-register button {
+	cursor: pointer;
+	font-size: 35px;
+	font-weight: bold;
+	padding: 5px;
+	border: 2px solid black;
+	border-radius: 15px;
+	opacity: 0.7;
+	transition: 1s ease;
+}
+
+.button-register button:hover {
+	transform: scale(1.1);
+	opacity: 1;
+}
+
+.button-register button:active {
+	background-color: red;
+}
+
+/* ------------------------------------------------------------ */
+/* Already have an account */
+/* ------------------------------------------------------------ */
+
+.register-form-innerborder .Already-have-an-account {
+	text-align: center;
+}
+
+.register-form-innerborder .Already-have-an-account a {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.register-form-innerborder .Already-have-an-account a:hover {
+	text-decoration: underline;
+}
+
+/* ------------------------------------------------------------ */
+/* copyright */
+/* ------------------------------------------------------------ */
+
+footer {
+	background-color: #4c3d3d;
+	color: white;
+	margin-top: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+footer span {
+	font-family: 'Corinthia', cursive;
+	font-size: 30px;
+}
